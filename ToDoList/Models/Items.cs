@@ -19,6 +19,8 @@ namespace ToDoList.Models
 
     public ICollection<CategoryItem> Categories { get;}
 
+    public virtual ApplicationUser User { get; set; }
+
     public string SetDate()
     {
       return this.Date.ToString("yyyy-MM-dd");
